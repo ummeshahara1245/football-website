@@ -20,7 +20,11 @@ body{
 }
 .top-banner h1{
     color: #ffffff;
-    font-weight: 900;
+    
+    font-Weight :700;
+font-Size: 64px;
+line-height:80px;
+
 }
 .link-btn{
     background-color: #E02C6D;
@@ -61,19 +65,107 @@ p{
     padding: 20px;
   }
   
+  .footer-half-width{
+    width:40%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.footer-banner{
+    margin-top: 5%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.footer-banner img{
+width: 567px;
+height: 427px;
+    
+}
+.footer-banner h1{
+ font-weight: 700;
 
+font-size:  48px;
+
+line-height :60px;
+
+
+}
+.link-btn{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+}
+.footer-half-width a{
+    text-decoration: none;
+}
+hr{
+    margin-top: 3%;
+    width: 80%;
+    background-color: #E02C6D;
+}
+.winner img{
+    width: 100%;
+    justify-content: center;
+}
+.winner-team h1{
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 63px;
+    width:300px;
+ 
+}
+.icons .fab{
+    align-items: center;
+    font-size: 32px;
+    margin: 0 10px;
+    color: #cbcbcb;
+    
+}
+.icons{
+    text-align: center; 
+}
+.copyright{
+    text-align: center;
+}
+
+.top-banner:hover .width-content{
+    display: block;
+ /* background-color: rgba(199, 187, 159, 0.356); */
+}
+.top-banner:hover img{
+    transform:  rotate(-360deg);
+    transition: transform 2s ease-in-out;
+}
 
   @media only screen and (max-width:688px){
-
+    
+    .half-width{
+        margin: 0;
+        padding: 0;
+    }
     .top-banner{
+        width: 100%;
+        padding: 0;
         display: grid;
-        grid-template-rows: repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
     .half-width img{
-        height: 219px;
-        width: 278px;
+        height: 259.17px;
+        width: 329px;
+        margin-top: 20%;
+    }
+    .half-width h1{
+        margin-left: 7%;
     }
     .cards{
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -81,10 +173,35 @@ p{
         
     }
     .card_image{
-
+padding: 0;
       justify-content: center;
       display: grid;
       margin: 0;
+    }
+    .link-btn{
+        background-color: orange;
+        padding: 10px 12px;
+        color: black;
+        
+    }
+
+    .footer-banner{
+        padding: 0;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .footer-half-width img{
+        padding: 0;
+        height: 248px;
+        width: 328px;
+        margin-top: 20%;
+    }
+    .logo img{
+        height: 63px;
+        width: 300px;
+    }
+    .winner-team{
+        width: 100%;
     }
 
 }
